@@ -13,7 +13,7 @@ class Cat:
 
 # Instantiate 3 cats of object Cat
 cat1 = Cat('Bill', 9)
-cat2 = Cat('kitty', 3)
+cat2 = Cat('Kitty',11)
 cat3 = Cat('Timu', 11)
 
 
@@ -22,14 +22,17 @@ def oldest(*args):
 
 
 def find_name(*args):
+    """Finds the cat names with the oldest age"""
+    names = []
     for item in args:
         print(item.name, item.age)
         if old_age == item.age:
-            return item.name
+            names.append(item.name)
+    return names
 
 
 old_age = oldest(cat1.age, cat2.age, cat3.age)
-cat_name = find_name(cat1, cat2, cat3)
-print(f"Oldest age of cat is {old_age} years old and the name of the cat is {cat_name}")
+cat_name = " ".join(find_name(cat1, cat2, cat3))  # joins the elements of the list
+print(f"Oldest age of cat is {old_age} years old and the name of the cat are {cat_name}")
 
 print(cat1.pur().pur().pur())  # this statement is deduced to object.pur
