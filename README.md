@@ -5,10 +5,14 @@
 
 ### Object Oriented Programming
 
-* Item 1
-* Item 2
-* Item 2a
-* Item 2b
+* Pillar of OOP
+* Attributes and methods
+* Inheritance
+* Dunder Methods
+* Encapsulation
+* Polymorphism
+* Multiple inheritance
+* Method Resolution Order
 
 ### Functional Programming 
 
