@@ -16,10 +16,15 @@
 
 ### Functional Programming 
 
-* Item 1
-* Item 2
-* Item 2a
-* Item 2b
+* Pure Functions
+* Map Function
+* Filter Functions
+* Zip Function
+* Reduce Functions
+* Lambda Expressions
+* List Comprehension
+* Set Comprehension
+* Dictionary Comprehension
 
 ### Advanced Python Decorators
 
