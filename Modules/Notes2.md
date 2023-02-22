@@ -7,3 +7,7 @@ if __name__ == '__main__': # This particular statment will be seen across projec
 ``` 
 > Each module/package will have its own name stored in ```__name__```
 
+
+### Modules in python
+[Modules in python, documentation](https://docs.python.org/3/py-modindex.html)
+
