@@ -11,3 +11,6 @@ if __name__ == '__main__': # This particular statment will be seen across projec
 ### Modules in python
 [Modules in python, documentation](https://docs.python.org/3/py-modindex.html)
 
+## Python Package Index 
+[PyPI Python Package Index](https://pypi.org/)
+>Find packages built by other devs/organisations

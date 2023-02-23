@@ -2,10 +2,10 @@ from sys import argv
 from random import randint
 
 
-def guess_num(x, y, z):
+def guess_num(x1, y1, z1):
     """ Guess the numbers"""
-    k = randint(x, y)
-    if k == z:
+    k = randint(x1, y1)
+    if k == z1:
         print("bingo! you've guessed correctly")
         return 1
     else:
