@@ -18,3 +18,10 @@ if __name__ == '__main__': # This particular statment will be seen across projec
 ## venv - Virtual Environment
 >A virtual environment is a tool that helps to keep dependencies required by different projects separate by creating isolated python virtual environments for them. This is one of the most important tools that most Python developers use.
 > 
+
+
+### Developer Fundamentals:
+* Before using a module or library make sure that you absolutely need it.
+* If you can code the required functionality by yourself then do it by yourself.
+* Some libraries can be buggy and not perform as intended
+ 
