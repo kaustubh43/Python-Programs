@@ -14,3 +14,5 @@ Hence, in Python, a file operation takes place in the following order:
 >[Pathlib Module Documentation](https://docs.python.org/3/library/pathlib.html)
 > 
 >[Pathlib Module GFG](https://www.geeksforgeeks.org/pathlib-module-in-python/)
+
+### File Errors
