@@ -2,7 +2,7 @@ from sys import argv
 from os import listdir, path, mkdir
 from PIL import Image
 # This script has to be run from the CLI to convert JPG to PNG
-# two arguments: Firsts one is the source directory, Second on is target directory
+# two arguments from CLI: Firsts one is the source directory, Second on is target directory
 
 x = argv[1]
 y = argv[2]
