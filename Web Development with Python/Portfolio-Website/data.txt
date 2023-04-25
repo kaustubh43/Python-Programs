@@ -1,2 +1,0 @@
-email,subject,message
-hello@gmail.com,this is just a random subject, This is just a random message
