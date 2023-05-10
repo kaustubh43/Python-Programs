@@ -41,6 +41,19 @@ This module will cover machine learning and Data Science
 > 5. Check the output
 > 6. Improve
 
+### Tools in machine learning offered by python
+> Numpy: for working with lists and arrays
+> 
+> Pandas: working with tabular data
+> 
+> Scikit Learn: to create a model 
+> 
+> Matplotlib: to visualise data
+> 
+> Jupyter Notebooks: web based interactive computing platform
+> 
+> Kaggle: Community for machine learning enthusiasts; To download Datasets.
+
 
 ### Data Science
 > It overlaps with Machine Learning
