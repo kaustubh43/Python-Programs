@@ -52,9 +52,9 @@ This module will cover machine learning and Data Science
 > 
 > Jupyter Notebooks: web based interactive computing platform
 > 
-> Kaggle: Community for machine learning enthusiasts; To download Datasets.
+> Kaggle: Community for machine learning enthusiasts; To download Datasets!
 
-
+### [Cheat Sheet for Pandas](https://elitedatascience.com/python-cheat-sheet)
 ### Data Science
 > It overlaps with Machine Learning
 > 
