@@ -125,3 +125,5 @@ urlpatterns = [
 ```
 
 # Django Built in User Management
+
+[User Management](./notes2.md)
