@@ -127,3 +127,7 @@ urlpatterns = [
 # Django Built in User Management
 
 [User Management](./notes2.md)
+
+# Django ORM: Object Relational Mapping
+
+[Django ORM](./notes3.md)
