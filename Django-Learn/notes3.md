@@ -43,3 +43,20 @@ Django Object Relational Mapping:
 ## How to handle
 >
 > Launching shell `python manage.py shell`
+>
+> Creating a note object :
+>
+```
+    >>> from notes.models import Note
+    >>> my_note = Note.objects.get(pk='1')  # get method will search for object where private key is equal to one. 
+    >>> my_note.title  # We can access using the object by their attributes.
+    >>> Note.objects.all()  # To Query all in the table. This returns a 'QuerySet'
+    # Create a new note
+    >>> new_note = Note.objects.create(title='My third note', text='This is a test note from shell for the second time',author='Kaustubh Ajgaonkar', comments='Nothing to here to see')
+    # Filtering attributes that start with 'My'
+    >>> Note.objects.filter(title__startswith='My') # This will return a query set with the Note Object Number
+    # Exclude: Opposite of filter
+    >>> Note.objects.exclude(text__icontains='Django')
+    # Query sets can also be filterd
+    >>> Note.objects.filter(text__icontains='Django').exclude(title__icontains='Django')  # This will filter text that contains Django but exclude title that excludes Django
+```
