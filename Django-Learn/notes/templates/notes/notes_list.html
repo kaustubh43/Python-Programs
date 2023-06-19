@@ -1,0 +1,17 @@
+<html>
+<h1> These are the notes</h1>
+<ul>
+    {% for note in notes %}
+    <li>{{note.title}}</li>
+    {% endfor %}
+</ul>
+
+</html>
+
+<!--
+Everything within the curly bracket is DTL Logic
+
+Loop happen between curly bracket and percentages
+Things that are to be rendered are put within double curly brackets
+
+-->

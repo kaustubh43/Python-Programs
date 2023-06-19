@@ -131,3 +131,7 @@ urlpatterns = [
 # Django ORM: Object Relational Mapping
 
 [Django ORM](./notes3.md)
+
+# Building Dynamic Web Pages
+
+[Dynamic Webpages](./notes4.md)
