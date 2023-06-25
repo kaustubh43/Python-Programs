@@ -1,17 +1,20 @@
 from django.shortcuts import render
 from django.http import Http404
 # Create your views here.
+from django.http.response import  HttpResponseRedirect
 from .models import Note
 from django.views.generic import TemplateView, ListView, DetailView, CreateView,UpdateView
 from django.shortcuts import redirect
 from .forms import NotesForm
 from django.views.generic.edit import DeleteView
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 class NotesDeleteView(DeleteView):
     model = Note
     success_url = '/smart/notes'
     template_name = 'notes/notes_delete.html'
+
 
 class NotesUpdateView(UpdateView):
     model = Note
@@ -23,12 +26,23 @@ class NotesCreateView(CreateView):
     model = Note
     form_class = NotesForm
     success_url = '/smart/notes'
+    login_url = '/admin'
+
+    def form_valid(self, form):
+        self.object = form.save(commit=False)
+        self.object.user = self.request.user
+        self.object.save()
+        return HttpResponseRedirect(self.get_success_url())
 
 
-class NoteListView(ListView):
+class NoteListView(LoginRequiredMixin, ListView):
     model = Note
     context_object_name = "notes"  # This is used in templates in for loop
     template_name = "notes/notes_list.html"
+    login_url = '/admin'
+
+    def get_queryset(self):
+        return self.request.user.note.all()
 
 
 # def list_all_entries(request):
