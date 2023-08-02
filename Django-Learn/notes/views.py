@@ -1,9 +1,8 @@
 from django.shortcuts import render
 from django.http import Http404
-# Create your views here.
-from django.http.response import  HttpResponseRedirect
+from django.http.response import HttpResponseRedirect
 from .models import Note
-from django.views.generic import TemplateView, ListView, DetailView, CreateView,UpdateView
+from django.views.generic import TemplateView, ListView, DetailView, CreateView, UpdateView
 from django.shortcuts import redirect
 from .forms import NotesForm
 from django.views.generic.edit import DeleteView
@@ -39,7 +38,7 @@ class NoteListView(LoginRequiredMixin, ListView):
     model = Note
     context_object_name = "notes"  # This is used in templates in for loop
     template_name = "notes/notes_list.html"
-    login_url = '/admin'
+    login_url = '/login'
 
     def get_queryset(self):
         return self.request.user.note.all()

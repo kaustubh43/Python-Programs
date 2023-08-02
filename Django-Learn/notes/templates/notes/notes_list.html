@@ -7,10 +7,10 @@
     {% for note in notes %}
     <div class="col">
         <div class="p-3 border">
-            <a href="{% url 'notes.details' pk=note.id %}" class="text-dark text-decorator" >
-             <h3>{{note.title}}</h3>
+            <a href="{% url 'notes.details' pk=note.id %}" class="text-dark text-decorator">
+                <h3>{{note.title}}</h3>
             </a href>
-             {{note.text|truncatechars:20}}
+            {{note.text|truncatechars:20}}
         </div>
     </div>
     {% endfor %}
